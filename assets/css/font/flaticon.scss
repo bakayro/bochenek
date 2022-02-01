@@ -1,0 +1,53 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?ea52c97bc01d9457c0432636e41853b9") format("truetype"),
+url("./flaticon.woff?ea52c97bc01d9457c0432636e41853b9") format("woff"),
+url("./flaticon.woff2?ea52c97bc01d9457c0432636e41853b9") format("woff2"),
+url("./flaticon.eot?ea52c97bc01d9457c0432636e41853b9#iefix") format("embedded-opentype"),
+url("./flaticon.svg?ea52c97bc01d9457c0432636e41853b9#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "mail": "\f101",
+    "telephone-call": "\f102",
+    "maps-and-flags": "\f103",
+    "time": "\f104",
+    "facebook": "\f105",
+    "instagram": "\f106",
+    "telegram": "\f107",
+);
+
+.flaticon-mail:before {
+    content: map-get($flaticon-map, "mail");
+}
+.flaticon-telephone-call:before {
+    content: map-get($flaticon-map, "telephone-call");
+}
+.flaticon-maps-and-flags:before {
+    content: map-get($flaticon-map, "maps-and-flags");
+}
+.flaticon-time:before {
+    content: map-get($flaticon-map, "time");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-telegram:before {
+    content: map-get($flaticon-map, "telegram");
+}
